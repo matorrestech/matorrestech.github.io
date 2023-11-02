@@ -1,0 +1,182 @@
+/* Importing the poppins font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background-color: #292B41;
+}
+
+.headerNavBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 5rem;
+}
+
+/* Logo when on desktop or larger screens */
+.headerLogo {
+    display: flex;
+    align-items: center;
+}
+
+.headerLogo img:hover {
+    transform: scale(1.2);
+}
+
+/* Menu when on desktop or larger screens */
+.headerMenu {
+    display: flex;
+    align-items: center;
+}
+
+.headerMenu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.headerMenuItens {
+    margin: 0 1.3rem;
+}
+
+.headerMenuItensLink {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #DFDAD8;
+    font-weight: 300;
+}
+
+.headerMenuItensLink:hover {
+    padding: 0.2em;
+    background-color: #DFDAD8;
+    color: #292B41;
+    border-radius: 0.2rem;
+    font-weight: 400;
+}
+
+/* Social media icons */
+.headerSocialMedia {
+    color:#DFDAD8;
+    display: flex;
+    align-items: center;
+}
+
+.headerSocialMedia ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.headerSocialMediaItens {
+    margin: 0 0.5rem;
+}
+
+.headerSocialMediaItensLink {
+    color: #DFDAD8;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.headerSocialMediaItensLink i:hover {
+    transform: scale(1.2);
+}
+
+/* Mobile menu icon */
+.headerMobileMenuIconHamburguer {
+    padding: 0.3rem;
+    font-size: 1.6rem;
+}
+
+/* Mobile menu */
+.headerMobileMenuIcon {
+    display: none;
+}
+
+.headerMobileMenu {
+    display: none
+}
+
+.headerMobileMenu ul{
+    list-style: none;
+}
+
+/* MAIN */
+
+/* RESPONSIVIDADE */
+
+@media only screen and (max-width: 920px) {
+    
+/* HEADER */ 
+
+    .headerNavBar {
+        padding: 0.5rem 1rem;
+    }
+
+    /* Hiding the logo on mobile */
+    .headerLogo img {
+        display: none;
+    }
+
+    /* Hiding the menu on mobile */
+    .headerMenu {
+        display: none;
+    }
+    
+    /* Showing mobile menu icon. */
+    .headerMobileMenuIcon {
+        display: flex;
+        align-items: center;
+    }
+
+    .headerMobileMenuIcon img {
+        max-width: 1rem;
+    }
+
+    .headerMobileMenuIcon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Social media icons */
+    .headerSocialMediaItens {
+        margin: 0 0.15rem;
+    }
+
+    .headerSocialMedia p {
+        font-size: 0.9rem;
+    }
+
+    .headerSocialMediaItensLink {
+        font-size: 1.1rem;
+    }
+
+    /* Mobile menu */
+    .headerMobileMenu  ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .headerMobileMenu a {
+        font-size: 0.9rem;
+    }
+
+    .headerMobileMenu .headerMenuItens {
+        display: block;
+        padding-top: 0.5rem;
+    }
+
+    /* Class that is used to open and close the mobile menu. */
+    .open {
+        display: block;
+    }
+}
