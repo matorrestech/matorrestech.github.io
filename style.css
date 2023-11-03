@@ -1,17 +1,17 @@
 /* Importing the poppins font from google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-/* HEADER */
+/* HEADER ------------------------------------------- */
 
 header {
-    background-color: #292B41;
+    background-color: #292b41;
 }
 
 .headerNavBar {
@@ -49,21 +49,21 @@ header {
 .headerMenuItensLink {
     text-decoration: none;
     font-size: 1.15rem;
-    color: #DFDAD8;
+    color: #dfdad8;
     font-weight: 300;
 }
 
 .headerMenuItensLink:hover {
     padding: 0.2em;
-    background-color: #DFDAD8;
-    color: #292B41;
+    background-color: #dfdad8;
+    color: #292b41;
     border-radius: 0.2rem;
     font-weight: 400;
 }
 
 /* Social media icons */
 .headerSocialMedia {
-    color:#DFDAD8;
+    color: #dfdad8;
     display: flex;
     align-items: center;
 }
@@ -79,7 +79,7 @@ header {
 }
 
 .headerSocialMediaItensLink {
-    color: #DFDAD8;
+    color: #dfdad8;
     text-decoration: none;
     font-size: 1.6rem;
 }
@@ -89,9 +89,8 @@ header {
 }
 
 /* Mobile menu icon */
-.headerMobileMenuIconHamburguer {
-    padding: 0.3rem;
-    font-size: 1.6rem;
+.headerMobileMenuIcon {
+    padding-top: 0.3rem;
 }
 
 /* Mobile menu */
@@ -100,44 +99,84 @@ header {
 }
 
 .headerMobileMenu {
-    display: none
+    display: none;
 }
 
-.headerMobileMenu ul{
+.headerMobileMenu ul {
     list-style: none;
 }
 
-/* MAIN */
+/* MAIN ------------------------------------------- */
 
 Main {
-    background-color: #292B41;
+    background-color: #292b41;
     background-image: url("/images/logo-background.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100vh;
-    height: 100vh;
+    background-size: 100%;
     display: flex;
+    height: 100vh;
 }
 
 .mainContainer {
-    color:#DFDAD8;
-    display:flex;
+    color: #dfdad8;
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0.5rem 5rem;
+    padding: 1rem 5rem 2rem;
 }
 
-.mainContainer p {
+.mainContainer a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: #dfdad8;
+    color: #292b41;
+    border-radius: 0.5rem;
+    padding: 0 1.5rem;
+}
+
+.mainContainer a:hover {
+    transform: scale(1.2);
+}
+
+.mainPhoto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainPhoto img {
+    padding-bottom: 0.8rem;
+    width: 10rem;
+}
+
+.mainPhotoMT {
+    font-weight: 200;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.mainPhotoWebDeveloper {
+    font-weight: 200;
+    letter-spacing: 0.2rem;
+}
+
+.mainPhotoTorres {
+    font-weight: 500;
+}
+
+.mainContainerText {
+    font-weight: 200;
+    font-size: 1.1rem;
+    padding: 1rem;
     text-align: center;
 }
 
-
-/* RESPONSIVITY */
+/* RESPONSIVITY ------------------------------------------- */
 
 @media only screen and (max-width: 920px) {
-    
-/* HEADER */ 
+    /* RERSPONSIVE HEADER ------------------------------------------- */
 
     .headerNavBar {
         padding: 0.5rem 1rem;
@@ -145,14 +184,14 @@ Main {
 
     /* Hiding the logo on mobile */
     .headerLogo img {
-        display: none;
+        width: 2rem;
     }
 
     /* Hiding the menu on mobile */
     .headerMenu {
         display: none;
     }
-    
+
     /* Showing mobile menu icon. */
     .headerMobileMenuIcon {
         display: flex;
@@ -183,7 +222,7 @@ Main {
     }
 
     /* Mobile menu */
-    .headerMobileMenu  ul {
+    .headerMobileMenu ul {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -202,5 +241,43 @@ Main {
     /* Class that is used to open and close the mobile menu. */
     .open {
         display: block;
+    }
+
+    /* RERSPONSIVE MAIN ------------------------------------------- */
+
+    .mainContainer {
+        padding: 1rem 0.5rem 0.5rem;
+    }
+
+    .mainPhoto img {
+        padding-bottom: 0.5rem;
+        width: 6rem;
+    }
+
+    .mainPhotoMT {
+        font-weight: 200;
+        font-size: 1.2rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .mainPhotoWebDeveloper {
+        font-weight: 200;
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .mainContainerText {
+        font-size: 1rem;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .mainContainer a {
+        text-decoration: none;
+        font-size: 1rem;
+        background-color: #dfdad8;
+        color: #292b41;
+        border-radius: 0.5rem;
+        padding: 0 1.5rem;
     }
 }
