@@ -246,7 +246,7 @@ Main {
     /* RERSPONSIVE MAIN ------------------------------------------- */
 
     .mainContainer {
-        padding: 1rem 0.5rem 0.5rem;
+        padding: 0rem 0.5rem 0.5rem;
     }
 
     .mainPhoto img {
@@ -268,7 +268,7 @@ Main {
 
     .mainContainerText {
         font-size: 1rem;
-        padding: 1.5rem;
+        padding: 0rem;
         text-align: center;
     }
 
