@@ -3,6 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="/images/photo.png"
+            type="image/x-icon"
+        />
+        <meta
+            name="description"
+            content="I'm the creative who designs the web of the future with the
+        latest technologies."
+        />
         <link rel="stylesheet" href="style.css" />
         <link
             rel="stylesheet"
@@ -26,8 +36,13 @@
                     </button>
                 </div>
                 <!-- Logo when on desktop or larger screens -->
-                <div class="headerLogo">
-                    <img src="/images/logo.svg" alt="logo Matheus Torres" />
+                <div class="headerPhotoName">
+                    <img
+                        class="photo"
+                        src="/images/photo.png"
+                        alt="photo Matheus Torres"
+                    />
+                    <span>MATHEUS <span class="bold">TORRES</span></span>
                 </div>
                 <!-- Menu when on desktop or larger screens -->
                 <div class="headerMenu">
@@ -77,7 +92,9 @@
                             </a>
                         </li>
                     </ul>
-                    <p>/matorres<b>tech</b></p>
+                    <p class="matorrestech">
+                        /matorres<b class="bold">tech</b>
+                    </p>
                 </div>
             </nav>
             <!-- Mobile menu -->
@@ -102,21 +119,20 @@
         <!-- MAIN -->
         <main>
             <div class="mainContainer">
-                <div class="mainPhoto">
-                    <img src="/images/photo.png" alt="photo Matheus Torres" />
-                    <p class="mainPhotoMT">
-                        MATHEUS <span class="mainPhotoTorres">TORRES</span>
+                <div class="mainLogo">
+                    <img src="/images/logo.svg" alt="logo Matheus Torres" />
+                    <p class="mainLogoMT">
+                        MATHEUS <span class="bold">TORRES</span>
                     </p>
-                    <p class="mainPhotoWebDeveloper">WEB DEVELOPER</p>
+                    <p class="mainLogoWebDeveloper">WEB DEVELOPER</p>
                 </div>
                 <p class="mainContainerText">
-                    "I am a technology enthusiast with a background in Web
-                    Development and a passion for design. My journey is driven
-                    by the desire to explore the latest web technologies and
-                    turn them into personal, unique, and unforgettable
-                    experiences for all."
+                    “I'm the creative who designs the web of the future with the
+                    latest technologies."
                 </p>
-                <a download href="/doc/cv.pdf">Download <b>CV</b></a>
+                <a download href="/doc/cv.pdf"
+                    >Download <b class="bold">CV</b></a
+                >
             </div>
         </main>
 

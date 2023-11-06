@@ -6,12 +6,14 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    font-weight: 200;
 }
 
 /* HEADER ------------------------------------------- */
 
 header {
     background-color: #292b41;
+    height: 7vh;
 }
 
 .headerNavBar {
@@ -20,13 +22,25 @@ header {
     padding: 0.5rem 5rem;
 }
 
-/* Logo when on desktop or larger screens */
-.headerLogo {
-    display: flex;
-    align-items: center;
+.bold {
+    font-weight: 400;
 }
 
-.headerLogo img:hover {
+/* Photo when on desktop or larger screens */
+.headerPhotoName {
+    font-size: 1.1rem;
+    color: #dfdad8;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.headerPhotoName img {
+    width: 2rem;
+}
+
+.headerPhotoName img:hover {
     transform: scale(1.2);
 }
 
@@ -50,7 +64,6 @@ header {
     text-decoration: none;
     font-size: 1.15rem;
     color: #dfdad8;
-    font-weight: 300;
 }
 
 .headerMenuItensLink:hover {
@@ -115,7 +128,8 @@ Main {
     background-position: center;
     background-size: 100%;
     display: flex;
-    height: 100vh;
+    justify-content: center;
+    height: 93vh;
 }
 
 .mainContainer {
@@ -124,7 +138,6 @@ Main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem 5rem 2rem;
 }
 
 .mainContainer a {
@@ -140,43 +153,48 @@ Main {
     transform: scale(1.2);
 }
 
-.mainPhoto {
+.mainLogo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.mainPhoto img {
+.mainLogo img {
     object-fit: cover;
     padding-bottom: 0.8rem;
-    width: 10rem;
+    width: 25rem;
 }
 
-.mainPhotoMT {
-    font-weight: 200;
+.mainLogoMT {
     font-size: 2rem;
     letter-spacing: 0.5rem;
 }
 
-.mainPhotoWebDeveloper {
-    font-weight: 200;
+.mainLogoWebDeveloper {
     letter-spacing: 0.2rem;
 }
 
-.mainPhotoTorres {
-    font-weight: 500;
-}
-
 .mainContainerText {
-    font-weight: 200;
     font-size: 1.1rem;
-    padding: 5rem;
+    padding: 3rem;
     text-align: center;
 }
 
 /* RESPONSIVITY ------------------------------------------- */
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1048px) {
+    .matorrestech {
+        display: none;
+    }
+    .headerMenuItensLink {
+        font-size: 1rem;
+    }
+    .headerPhotoName {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 881px) {
     /* RERSPONSIVE HEADER ------------------------------------------- */
 
     .headerNavBar {
@@ -184,7 +202,17 @@ Main {
     }
 
     /* Hiding the logo on mobile */
-    .headerLogo img {
+
+    .headerPhotoName {
+        font-size: 0.9rem;
+        color: #dfdad8;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0.5rem;
+    }
+
+    .headerPhotoName img {
         width: 2rem;
     }
 
@@ -204,8 +232,8 @@ Main {
     }
 
     .headerMobileMenuIcon button {
-        background-color: transparent;
         border: none;
+        background-color: transparent;
         cursor: pointer;
     }
 
@@ -220,6 +248,9 @@ Main {
 
     .headerSocialMediaItensLink {
         font-size: 1.1rem;
+    }
+    .matorrestech {
+        display: none;
     }
 
     /* Mobile menu */
@@ -250,19 +281,17 @@ Main {
         padding: 0rem 0.5rem 0.5rem;
     }
 
-    .mainPhoto img {
+    .mainLogo img {
         padding-bottom: 0.5rem;
-        width: 6rem;
+        width: 10rem;
     }
 
-    .mainPhotoMT {
-        font-weight: 200;
+    .mainLogoMT {
         font-size: 1.4rem;
         letter-spacing: 0.2rem;
     }
 
     .mainPhotoWebDeveloper {
-        font-weight: 200;
         font-size: 0.8rem;
     }
 
