@@ -27,10 +27,10 @@ header .photo {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.1rem;
 }
 
 header .photo img {
+    margin: 0 0.5rem;
     width: 2rem;
 }
 
