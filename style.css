@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+/* GENERAL */
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
+
+.bold {
+    font-weight: 400;
+}
+
+/* HEADER ====================================== */
+header {
+    background-color: #292b41;
+    color: #dfdad8;
+
+    height: 5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.5rem;
+}
+
+header .container {
+    background-color: #292b41;
+
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+/* PHOTO AND LOGO WHEN ON DESKETOP OR LARGER SCREENS */
+header .photo {
+    font-size: 1.1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .photo img {
+    margin: 0 0.5rem;
+    width: 2rem;
+}
+
+/* MENU */
+header .nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+}
+
+header .nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .menu-itens {
+    display: flex;
+
+    margin: 0 1rem;
+}
+
+header .menu-itens-link {
+    text-decoration: none;
+
+    font-size: 1.1rem;
+
+    color: #dfdad8;
+}
+
+header .menu-itens-link:hover {
+    background-color: #dfdad8;
+    color: #292b41;
+
+    border-radius: 0.2rem;
+
+    font-weight: 400;
+}
+
+/* SOCIAL MEDIA ICONS */
+header .social-media {
+    display: flex;
+    align-items: center;
+
+    color: #dfdad8;
+}
+
+header .social-media-link {
+    color: #dfdad8;
+
+    display: flex;
+    margin: 0 0.3rem;
+
+    text-decoration: none;
+
+    font-size: 1.6rem;
+}
+
+header .social-media-link:hover {
+    transform: scale(1.2);
+}
+
+/*  MOBILE MENU ICON */
+header .mobile-menu-icon {
+    display: none;
+    align-items: center;
+
+    padding-top: 0.3rem;
+}
+
+header .mobile-menu-icon button {
+    border: none;
+
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+header .mobile-menu-icon img {
+    width: 1rem;
+}
+
+/* MOBILE MENU */
+header .mobile-menu {
+    display: none;
+}
+/* =========================================== */
+
+/* MAIN ====================================== */
+main {
+    background-color: #292b41;
+    background-image: url("/images/logo-background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    display: flex;
+    justify-content: center;
+    height: 94vh;
+
+    color: #dfdad8;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGO AND NAME */
+main .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .logo img {
+    width: 25rem;
+}
+
+main .name {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+
+    padding-top: 1rem;
+}
+
+main .web-developer {
+    font-size: 1.3rem;
+    letter-spacing: 0.5rem;
+}
+
+/* TEXT */
+main .text {
+    font-size: 1.2rem;
+    padding: 3rem;
+    text-align: center;
+}
+
+/* DOWNLOAD CV */
+main a {
+    font-size: 1.3rem;
+
+    text-decoration: none;
+
+    background-color: #dfdad8;
+    color: #292b41;
+
+    border-radius: 0.4rem;
+
+    padding: 0 1.5rem;
+}
+
+main a:hover {
+    transform: scale(1.2);
+}
+/* =========================================== */
+
+/* RESPONSIVE ====================================== */
+@media only screen and (max-width: 872px) {
+    header .matorrestech {
+        display: none;
+    }
+
+    header .menu-itens a {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 801px) {
+    header .open {
+        display: block;
+    }
+
+    header .container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    header .photo {
+        width: 50%;
+    }
+
+    header .nav-bar {
+        display: none;
+    }
+
+    header .mobile-menu-icon {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0.5rem;
+    }
+
+    header .mobile-menu-icon img {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+    header .mobile-menu {
+        position: fixed;
+
+        background-color: #292b41;
+        color: #dfdad8;
+
+        margin-top: 27vh;
+
+        width: 100%;
+    }
+
+    header .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding-bottom: 0.5rem;
+    }
+
+    header .mobile-menu a {
+        font-size: 0.8rem;
+        padding: 0.5rem 0;
+    }
+
+    header .mobile-menu .mobile-itens {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .open {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 537px) {
+    header .mobile-menu-icon img {
+        width: 1.1rem;
+    }
+
+    header .photo {
+        width: 50%;
+    }
+
+    header .photo img {
+        width: 1.4rem;
+    }
+
+    header .name {
+        font-size: 0.8rem;
+    }
+
+    main .logo img {
+        width: 15rem;
+    }
+
+    header .social-media a {
+        font-size: 1.2rem;
+        margin: 0 0.25rem;
+    }
+
+    main .name {
+        font-size: 1.6rem;
+        letter-spacing: 0.1rem;
+    }
+
+    main .web-developer {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+    }
+}
