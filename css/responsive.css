@@ -1,0 +1,91 @@
+@media only screen and (max-width: 872px) {
+    header .container {
+        background-color: #292b41;
+        position: fixed;
+
+        display: flex;
+        justify-content: center;
+        width: 1rem;
+    }
+
+    header .matorrestech {
+        display: none;
+    }
+
+    header .menu-itens a {
+        font-size: 1rem;
+    }
+
+    header .photo {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 801px) {
+    header .open {
+        display: block;
+    }
+
+    header .container .nav-bar {
+        display: none;
+    }
+
+    header .container .mobile-menu-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0.5rem;
+    }
+
+    header .container .mobile-menu-icon img {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+    header .container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 537px) {
+    header .container {
+        height: 6vh;
+    }
+
+    header .container .mobile-menu-icon img {
+        width: 1.1rem;
+    }
+
+    header .container .photo {
+        width: 100%;
+    }
+
+    header .container .photo img {
+        width: 1.4rem;
+    }
+
+    header .container .name {
+        font-size: 0.8rem;
+    }
+
+    main .container .logo img {
+        width: 15rem;
+    }
+
+    header .container .social-media a {
+        font-size: 1.2rem;
+        margin: 0 0.25rem;
+    }
+
+    main .container .logo .web-developer {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+    }
+
+    main .container .name {
+        font-size: 1.6rem;
+        letter-spacing: 0.1rem;
+    }
+}
