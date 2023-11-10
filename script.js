@@ -9,3 +9,9 @@ function menuShow() {
         document.querySelector(".icon").src = "/images/mobile-icon-close.svg";
     }
 }
+
+function closeMenu() {
+    let menuMobile1 = document.querySelector("header .mobile-menu");
+    menuMobile1.classList.remove("open");
+    document.querySelector(".icon").src = "/images/mobile-icon-hamburguer.svg";
+}

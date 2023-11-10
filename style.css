@@ -34,6 +34,8 @@ header .container {
 
     position: fixed;
 
+    height: 3rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,7 +154,7 @@ main {
 
     display: flex;
     justify-content: center;
-    height: 94vh;
+    height: 95vh;
 
     color: #dfdad8;
 }
@@ -212,9 +214,83 @@ main a {
 main a:hover {
     transform: scale(1.2);
 }
-/* =========================================== */
+/* ================================================= */
+
+/* PROJECTS ======================================== */
+.projects {
+    background-color: #dfdad8;
+    color: #292b41;
+
+    padding-top: 6vh;
+
+    padding-bottom: 6vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.projects h1 {
+    font-size: 5rem;
+    padding-bottom: 2rem;
+}
+
+.projects .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-items: center;
+
+    gap: 1rem;
+}
+
+.projects .card {
+    color: #292b41;
+    width: 500px;
+    height: 500px;
+    border-radius: 0.7rem;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    text-align: center;
+}
+
+.projects .card:hover {
+    box-shadow: #292b41 0rem 0rem 1rem;
+}
+
+.project .card p {
+    padding: 0 5rem;
+}
+
+.projects a {
+    background-color: #292b41;
+    color: #dfdad8;
+
+    text-decoration: none;
+
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+
+    margin: 0 1rem;
+}
+
+.projects a:hover {
+    font-weight: 400;
+}
 
 /* RESPONSIVE ====================================== */
+@media only screen and (max-width: 1025px) {
+    .projects .container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
+
 @media only screen and (max-width: 872px) {
     header .matorrestech {
         display: none;
@@ -262,7 +338,7 @@ main a:hover {
         background-color: #292b41;
         color: #dfdad8;
 
-        margin-top: 27vh;
+        margin-top: 12rem;
 
         width: 100%;
     }
@@ -326,5 +402,23 @@ main a:hover {
     main .web-developer {
         font-size: 1rem;
         letter-spacing: 0.1rem;
+    }
+
+    .projects .container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    .projects h1 {
+        font-size: 2rem;
+    }
+
+    .projects .card {
+        width: 270px;
+        height: 500px;
+    }
+
+    .projects .card img {
+        width: 270px;
     }
 }

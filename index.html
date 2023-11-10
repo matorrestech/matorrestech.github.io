@@ -29,7 +29,7 @@
 
     <body>
         <!-- HEADER ------------------------------------------------------------------------------------------------------- -->
-        <header>
+        <header id="home">
             <div class="container">
                 <!-- MOBILE MENU ICON -->
                 <div class="mobile-menu-icon">
@@ -100,20 +100,38 @@
                 <nav class="mobile-menu">
                     <ul>
                         <li class="menu-itens">
-                            <a href="#home" class="menu-itens-link"> Home </a>
+                            <a
+                                onclick="closeMenu()"
+                                href="#home"
+                                class="menu-itens-link"
+                            >
+                                Home
+                            </a>
                         </li>
                         <li class="menu-itens">
-                            <a href="#projects" class="menu-itens-link">
+                            <a
+                                onclick="closeMenu()"
+                                href="#projects"
+                                class="menu-itens-link"
+                            >
                                 Projects
                             </a>
                         </li>
                         <li class="menu-itens">
-                            <a href="#aboutme" class="menu-itens-link">
+                            <a
+                                onclick="closeMenu()"
+                                href="#aboutme"
+                                class="menu-itens-link"
+                            >
                                 About Me
                             </a>
                         </li>
                         <li class="menu-itens">
-                            <a href="#contacts" class="menu-itens-link">
+                            <a
+                                onclick="closeMenu()"
+                                href="#contacts"
+                                class="menu-itens-link"
+                            >
                                 Contacts
                             </a>
                         </li>
@@ -151,6 +169,94 @@
             </div>
         </main>
         <!-- END OF MAIN ---------------------------------------------------------------------------------------------------- -->
+
+        <!-- PROJECTS ------------------------------------------------------------------------------------------------------- -->
+        <section class="projects" id="projects">
+            <h1 class="bold">Projects</h1>
+            <div class="container">
+                <div class="card">
+                    <img src="/images/project-my-portfolio.png" alt="" />
+                    <h3 class="bold">My Own Portfolio</h3>
+                    <p>
+                        I started thinking about the colors, then the logo and
+                        decided to create it with HTML, CSS and Javascript.
+                    </p>
+                    <div class="links">
+                        <a
+                            href="https://matorrestech.github.io"
+                            target="_blank"
+                            class="link"
+                            ><i
+                                class="fa-solid fa-arrow-up-right-from-square"
+                            ></i>
+                            Access</a
+                        >
+                        <a
+                            href="https://github.com/matorrestech/matorrestech.github.io"
+                            target="_blank"
+                            ><i class="fa-brands fa-github"></i> GitHub</a
+                        >
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/project-my-portfolio.png" alt="" />
+                    <h3 class="bold">My Own Portfolio</h3>
+                    <p>
+                        I started thinking about the colors, then the logo and
+                        decided to create it with HTML, CSS and Javascript.
+                    </p>
+                    <div class="links">
+                        <a href="#"
+                            ><i
+                                class="fa-solid fa-arrow-up-right-from-square"
+                            ></i>
+                            Access</a
+                        >
+                        <a href=""
+                            ><i class="fa-brands fa-github"></i> GitHub</a
+                        >
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/project-my-portfolio.png" alt="" />
+                    <h3 class="bold">My Own Portfolio</h3>
+                    <p>
+                        I started thinking about the colors, then the logo and
+                        decided to create it with HTML, CSS and Javascript.
+                    </p>
+                    <div class="links">
+                        <a href="#"
+                            ><i
+                                class="fa-solid fa-arrow-up-right-from-square"
+                            ></i>
+                            Access</a
+                        >
+                        <a href=""
+                            ><i class="fa-brands fa-github"></i> GitHub</a
+                        >
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/project-my-portfolio.png" alt="" />
+                    <h3 class="bold">My Own Portfolio</h3>
+                    <p>
+                        I started thinking about the colors, then the logo and
+                        decided to create it with HTML, CSS and Javascript.
+                    </p>
+                    <div class="links">
+                        <a href="#"
+                            ><i
+                                class="fa-solid fa-arrow-up-right-from-square"
+                            ></i>
+                            Access</a
+                        >
+                        <a href=""
+                            ><i class="fa-brands fa-github"></i> GitHub</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- JAVASCRIPT AND EXTERNAL SCRIPTS -------------------------------------------------------------------------------- -->
         <script type="text/javascript" src="/script.js"></script>
