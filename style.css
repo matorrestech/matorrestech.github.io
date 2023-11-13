@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 
-/* GENERAL */
+/* GENERAL ====================================== */
 * {
     padding: 0;
     margin: 0;
@@ -14,8 +14,13 @@
 .bold {
     font-weight: 400;
 }
-
-/* HEADER ====================================== */
+/*
+|
+|
+=============== H E A D E R ===============
+|
+|
+*/
 header {
     background-color: #292b41;
     color: #dfdad8;
@@ -142,9 +147,13 @@ header .mobile-menu-icon img {
 header .mobile-menu {
     display: none;
 }
-/* =========================================== */
-
-/* MAIN ====================================== */
+/*
+|
+|
+=============== M A I N ===============
+|
+|
+*/
 main {
     background-color: #292b41;
     background-image: url("/images/logo-background.svg");
@@ -214,9 +223,13 @@ main a {
 main a:hover {
     transform: scale(1.2);
 }
-/* ================================================= */
-
-/* PROJECTS ======================================== */
+/*
+|
+|
+=============== P R O J E C T S ===============
+|
+|
+*/
 .projects {
     background-color: #dfdad8;
     color: #292b41;
@@ -247,9 +260,12 @@ main a:hover {
 }
 
 .projects .card {
+    background-color: rgba(255, 255, 255, 0.3);
     color: #292b41;
+
     width: 500px;
     height: 500px;
+
     border-radius: 0.7rem;
 
     display: grid;
@@ -260,10 +276,11 @@ main a:hover {
 }
 
 .projects .card:hover {
-    box-shadow: #292b41 0rem 0rem 1rem;
+    box-shadow: #b6b6b6 0rem 0rem 1rem;
 }
 
 .project .card p {
+    color: #292b41;
     padding: 0 5rem;
 }
 
@@ -282,143 +299,123 @@ main a:hover {
 .projects a:hover {
     font-weight: 400;
 }
+/*
+|
+|
+=============== A B O U T   M E ===============
+|
+|
+*/
+.about-me {
+    background-color: #292b41;
+    background-image: url("/images/logo-background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 
-/* RESPONSIVE ====================================== */
-@media only screen and (max-width: 1025px) {
-    .projects .container {
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-    }
+    color: #dfdad8;
+
+    padding-top: 6vh;
+
+    padding-bottom: 6vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
 
-@media only screen and (max-width: 872px) {
-    header .matorrestech {
-        display: none;
-    }
-
-    header .menu-itens a {
-        font-size: 1rem;
-    }
+.about-me h1 {
+    font-size: 5rem;
+    padding-bottom: 2rem;
 }
 
-@media only screen and (max-width: 801px) {
-    header .open {
-        display: block;
-    }
-
-    header .container {
-        width: 100%;
-        display: flex;
-        align-items: center;
-    }
-
-    header .photo {
-        width: 50%;
-    }
-
-    header .nav-bar {
-        display: none;
-    }
-
-    header .mobile-menu-icon {
-        display: block;
-        justify-content: center;
-        align-items: center;
-        margin: 0 0.5rem;
-    }
-
-    header .mobile-menu-icon img {
-        width: 1.4rem;
-        height: 1.4rem;
-    }
-
-    header .mobile-menu {
-        position: fixed;
-
-        background-color: #292b41;
-        color: #dfdad8;
-
-        margin-top: 12rem;
-
-        width: 100%;
-    }
-
-    header .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        padding-bottom: 0.5rem;
-    }
-
-    header .mobile-menu a {
-        font-size: 0.8rem;
-        padding: 0.5rem 0;
-    }
-
-    header .mobile-menu .mobile-itens {
-        display: block;
-        justify-content: center;
-        align-items: center;
-    }
-
-    header .open {
-        display: block;
-    }
+.about-me .container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
-@media only screen and (max-width: 537px) {
-    header .mobile-menu-icon img {
-        width: 1.1rem;
-    }
+.about-me .mt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    header .photo {
-        width: 50%;
-    }
+.about-me .mt h3 {
+    padding: 1rem;
+    font-size: 2rem;
+}
 
-    header .photo img {
-        width: 1.4rem;
-    }
+.about-me .title {
+    font-size: 1.3rem;
+}
 
-    header .name {
-        font-size: 0.8rem;
-    }
+.about-me .photo {
+    background-color: rgba(255, 255, 255, 0.2);
 
-    main .logo img {
-        width: 15rem;
-    }
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
 
-    header .social-media a {
-        font-size: 1.2rem;
-        margin: 0 0.25rem;
-    }
+    border-radius: 1rem;
+}
 
-    main .name {
-        font-size: 1.6rem;
-        letter-spacing: 0.1rem;
-    }
+.about-me .name {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+}
 
-    main .web-developer {
-        font-size: 1rem;
-        letter-spacing: 0.1rem;
-    }
+.about-me .web-developer {
+    letter-spacing: 0.2rem;
+}
 
-    .projects .container {
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-    }
+.about-me .skills {
+    display: flex;
+    flex-direction: column;
+}
 
-    .projects h1 {
-        font-size: 2rem;
-    }
+.about-me .skills ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-    .projects .card {
-        width: 270px;
-        height: 500px;
-    }
+    text-align: center;
 
-    .projects .card img {
-        width: 270px;
-    }
+    list-style: none;
+
+    padding: 0.5rem 0.3rem;
+}
+
+.about-me .skills li {
+    padding: 1rem 0;
+}
+
+.about-me .skills i {
+    padding: 0 1.5rem;
+    font-size: 2rem;
+}
+
+.about-me .skills li:hover {
+    transform: scale(1.2);
+}
+
+.about-me .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.about-me .text h3 {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.about-me .education {
+    text-align: center;
 }
