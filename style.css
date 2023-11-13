@@ -445,6 +445,7 @@ main a:hover {
     padding: 0 1rem;
 }
 .contacts h1 {
+    text-align: center;
     font-size: 5rem;
     padding-bottom: 2rem;
 }

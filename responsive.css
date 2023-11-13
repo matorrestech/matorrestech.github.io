@@ -159,6 +159,14 @@
         width: 250px;
     }
 
+    .about-me .mt {
+        width: auto;
+    }
+
+    .about-me .text {
+        width: auto;
+    }
+
     .about-me h1 {
         font-size: 2rem;
     }
@@ -206,7 +214,6 @@
     }
 
     .contacts h1 {
-        text-align: center;
         font-size: 2rem;
     }
 
