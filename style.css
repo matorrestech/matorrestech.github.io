@@ -406,18 +406,16 @@ main a:hover {
 .about-me .text {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: justify;
     padding: 1rem;
 }
 
 .about-me .text h3 {
-    padding: 1rem;
+    padding: 1rem 0;
     font-size: 2rem;
 }
 
-.about-me .education {
-    text-align: center;
+.about-me .description {
+    text-align: justify;
 }
 /*
 |
@@ -440,19 +438,28 @@ main a:hover {
     justify-items: center;
 }
 
+.contacts .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
 .contacts h1 {
     font-size: 5rem;
     padding-bottom: 2rem;
 }
 
+.contacts .text {
+    padding-bottom: 2rem;
+}
+
 .contacts h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .contacts .link {
     text-decoration: none;
     color: #292b41;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .contacts .link:hover {
@@ -460,11 +467,11 @@ main a:hover {
 }
 
 .contacts p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .contacts .matorrestech {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .contacts .social-media a {
@@ -473,4 +480,19 @@ main a:hover {
 
 .contacts .social-media i:hover {
     transform: scale(1.2);
+}
+/*
+|       
+|
+=============== F O O T E R ===============
+|
+|
+*/
+footer {
+    background-color: #292b41;
+    color: #dfdad8;
+
+    text-align: center;
+
+    padding: 0.5rem;
 }
