@@ -419,3 +419,58 @@ main a:hover {
 .about-me .education {
     text-align: center;
 }
+/*
+|
+|
+=============== C O N T A C T S ===============
+|
+|
+*/
+.contacts {
+    background-color: #dfdad8;
+    color: #292b41;
+
+    padding-top: 6vh;
+
+    padding-bottom: 6vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.contacts h1 {
+    font-size: 5rem;
+    padding-bottom: 2rem;
+}
+
+.contacts h3 {
+    font-size: 2rem;
+}
+
+.contacts .link {
+    text-decoration: none;
+    color: #292b41;
+    font-size: 1.5rem;
+}
+
+.contacts .link:hover {
+    text-decoration: underline;
+}
+
+.contacts p {
+    font-size: 1.5rem;
+}
+
+.contacts .matorrestech {
+    font-size: 1.5rem;
+}
+
+.contacts .social-media a {
+    color: #292b41;
+}
+
+.contacts .social-media i:hover {
+    transform: scale(1.2);
+}

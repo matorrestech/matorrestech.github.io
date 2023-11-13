@@ -122,13 +122,13 @@
         font-size: 0.8rem;
     }
 
-    main .logo img {
-        width: 15rem;
-    }
-
     header .social-media a {
         font-size: 1.2rem;
         margin: 0 0.25rem;
+    }
+
+    main .logo img {
+        width: 15rem;
     }
 
     main .name {
@@ -203,5 +203,26 @@
 
     .about-me .education p {
         font-size: 0.8rem;
+    }
+
+    .contacts h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .contacts h3 {
+        font-size: 1.5rem;
+    }
+
+    .contacts p {
+        font-size: 1rem;
+    }
+
+    .contacts .link {
+        font-size: 1rem;
+    }
+
+    .contacts .matorrestech {
+        font-size: 1rem;
     }
 }
