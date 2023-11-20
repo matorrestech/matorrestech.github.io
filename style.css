@@ -419,6 +419,10 @@ main a:hover {
 .about-me .description {
     text-align: justify;
 }
+
+.about-me ul {
+    padding: 0 3rem;
+}
 /*
 |
 |

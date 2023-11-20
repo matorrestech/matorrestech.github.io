@@ -223,6 +223,11 @@
         font-size: 0.8rem;
     }
 
+    .about-me ul {
+        padding: 0 2rem;
+        font-size: 0.8rem;
+    }
+
     .contacts h1 {
         font-size: 2rem;
     }
