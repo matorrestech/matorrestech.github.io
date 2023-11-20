@@ -31,7 +31,13 @@
         font-size: 1rem;
     }
 }
-
+/*
+|
+|
+=============== 801px ===============
+|
+|
+*/
 @media only screen and (max-width: 801px) {
     header .open {
         display: block;
@@ -139,6 +145,10 @@
     main .web-developer {
         font-size: 1rem;
         letter-spacing: 0.1rem;
+    }
+
+    main .text {
+        font-size: 1.1rem;
     }
 
     .projects .container {

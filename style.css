@@ -201,7 +201,7 @@ main .web-developer {
 
 /* TEXT */
 main .text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 3rem;
     text-align: center;
 }
@@ -407,6 +407,7 @@ main a:hover {
 .about-me .text {
     display: flex;
     flex-direction: column;
+    justify-content: start;
     width: 500px;
 }
 
