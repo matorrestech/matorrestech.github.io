@@ -3,7 +3,19 @@
 ## Screenshots
 
 <div align="center">
-<img src="https://github.com/matorrestech/profile-component-react/blob/main/sreenshots/screenshots.jpg" />
+<img src="https://github.com/matorrestech/matorrestech.github.io/blob/main/screenshots/screenshot%201.jpg" />
+</div>
+<br />
+<div align="center">
+<img src="https://github.com/matorrestech/matorrestech.github.io/blob/main/screenshots/screenshot%202.jpg" />
+</div>
+<br />
+<div align="center">
+<img src="https://github.com/matorrestech/matorrestech.github.io/blob/main/screenshots/screenshot%203.jpg" />
+</div>
+<br />
+<div align="center">
+<img src="https://github.com/matorrestech/matorrestech.github.io/blob/main/screenshots/screenshot%204.jpg" />
 </div>
 
 ## Description
