@@ -1,4 +1,4 @@
-# [React + Vite] => My Portfolio
+# [HTML + CSS] => My Portfolio
 
 ## Screenshots
 
